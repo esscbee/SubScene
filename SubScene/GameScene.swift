@@ -35,15 +35,15 @@ class GameScene: SKScene {
             let path = NSBundle.mainBundle().pathForResource(s, ofType: "sks")
             let node = SKReferenceNode (URL: NSURL (fileURLWithPath: path!))
             node.position = location
+            
+            let r = node.calculateAccumulatedFrame()
+            let pb = SKPhysicsBody(rectangleOfSize: r.size)
+            node.physicsBody = pb
+            pb.affectedByGravity = true
+            pb.dynamic = true
+            
             addChild(node)
         }
-    }
-    
-    override func didSimulatePhysics() {
-        for n in bodiesToAdd {
-            addChild(n)
-        }
-        bodiesToAdd.removeAll()
     }
     
     
