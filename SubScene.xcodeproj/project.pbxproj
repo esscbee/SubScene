@@ -17,6 +17,7 @@
 		D67E30371D37FC7D00C931F6 /* SubSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E30361D37FC7D00C931F6 /* SubSceneTests.swift */; };
 		D67E30421D37FC7D00C931F6 /* SubSceneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E30411D37FC7D00C931F6 /* SubSceneUITests.swift */; };
 		D67E30501D37FC9200C931F6 /* AScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D67E304F1D37FC9200C931F6 /* AScene.sks */; };
+		D67E30521D37FF5A00C931F6 /* BScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D67E30511D37FF5A00C931F6 /* BScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D67E30411D37FC7D00C931F6 /* SubSceneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSceneUITests.swift; sourceTree = "<group>"; };
 		D67E30431D37FC7D00C931F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D67E304F1D37FC9200C931F6 /* AScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AScene.sks; sourceTree = "<group>"; };
+		D67E30511D37FF5A00C931F6 /* BScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				D67E302A1D37FC7D00C931F6 /* LaunchScreen.storyboard */,
 				D67E302D1D37FC7D00C931F6 /* Info.plist */,
 				D67E304F1D37FC9200C931F6 /* AScene.sks */,
+				D67E30511D37FF5A00C931F6 /* BScene.sks */,
 			);
 			path = SubScene;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				D67E30201D37FC7D00C931F6 /* GameScene.sks in Resources */,
 				D67E302C1D37FC7D00C931F6 /* LaunchScreen.storyboard in Resources */,
 				D67E30501D37FC9200C931F6 /* AScene.sks in Resources */,
+				D67E30521D37FF5A00C931F6 /* BScene.sks in Resources */,
 				D67E30291D37FC7D00C931F6 /* Assets.xcassets in Resources */,
 				D67E30271D37FC7D00C931F6 /* Main.storyboard in Resources */,
 			);

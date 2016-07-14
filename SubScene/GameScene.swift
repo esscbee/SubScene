@@ -22,13 +22,17 @@ class GameScene: SKScene {
         self.addChild(myLabel)
     }
     
+    let scenes = [ "AScene", "BScene" ]
+    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         /* Called when a touch begins */
         
         for touch in touches {
             let location = touch.locationInNode(self)
+            
+            let s = scenes [ random() % scenes.count ]
 
-            let path = NSBundle.mainBundle().pathForResource("AScene", ofType: "sks")
+            let path = NSBundle.mainBundle().pathForResource(s, ofType: "sks")
             let node = SKReferenceNode (URL: NSURL (fileURLWithPath: path!))
             node.position = location
             addChild(node)
