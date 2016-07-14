@@ -35,14 +35,13 @@ class GameScene: SKScene {
             let path = NSBundle.mainBundle().pathForResource(s, ofType: "sks")
             let node = SKReferenceNode (URL: NSURL (fileURLWithPath: path!))
             node.position = location
-            
             let r = node.calculateAccumulatedFrame()
-            let pb = SKPhysicsBody(rectangleOfSize: r.size)
-            node.physicsBody = pb
-            pb.affectedByGravity = true
-            pb.dynamic = true
+            let move = SKAction.moveToY(-r.height / 2.0, duration: 5 + Double((random() % 50) / 10))
+            let remove = SKAction.removeFromParent()
+            let seq = SKAction.sequence([move, remove])
             
             addChild(node)
+            node.runAction(seq)
         }
     }
     
